@@ -59,18 +59,11 @@
       <div class="gallery-header"><div><div class="section-kicker">TRABALHOS REAIS</div><h2 id="gallery-title">Cuidado que<br><em>aparece</em></h2></div><p>Resultados realizados pela Madabeautyy, com atenção aos detalhes e respeito ao estilo de cada cliente.</p></div>
       <p class="demo-note">Galeria de atendimentos reais da Madabeautyy.</p>
       <div class="gallery-grid real-gallery">
-        <figure class="gallery-item photo-pedicure"><img src="assets/pedicure-real.jpeg" alt="Pedicure com esmaltação clara e acabamento delicado" loading="lazy"><figcaption><span>Pedicure</span><small>Cuidado e acabamento delicado</small></figcaption></figure>
+        <figure class="gallery-item photo-pedicure has-gallery"><img src="assets/pedicure-real.jpeg" alt="Pedicure com esmaltação clara e acabamento delicado" loading="lazy"><figcaption><span>Pedicure</span><small>Clique para ver todas as fotos</small></figcaption><button class="gallery-open" type="button" aria-haspopup="dialog" aria-controls="pedicure-gallery" aria-label="Abrir galeria de fotos de pedicure"></button></figure>
         <figure class="gallery-item photo-brows"><img src="assets/sobrancelhas-real.jpeg" alt="Resultado real de design de sobrancelhas" loading="lazy"><figcaption><span>Design de sobrancelhas</span><small>Expressão valorizada</small></figcaption></figure>
         <figure class="gallery-item photo-cafe"><img src="assets/manicure-cafe-real.jpeg" alt="Manicure com esmaltação em tom café" loading="lazy"><figcaption><span>Manicure</span><small>Tom café elegante</small></figcaption></figure>
         <figure class="gallery-item photo-francesinha"><img src="assets/francesinha-real.jpeg" alt="Manicure com esmaltação clara estilo francesinha" loading="lazy"><figcaption><span>Francesinha</span><small>Clássica e delicada</small></figcaption></figure>
         <figure class="gallery-item photo-spa"><img src="assets/spa-pes-real.jpeg" alt="Cuidado real realizado em spa dos pés" loading="lazy"><figcaption><span>Spa dos pés</span><small>Renovação e bem-estar</small></figcaption></figure>
-        <figure class="gallery-item photo-pedicure-pair">
-          <div class="pedicure-pair">
-            <img src="assets/francesinha-pedicure-clara.jpeg" alt="Francesinha pedicure com esmaltação branca delicada" loading="lazy">
-            <img src="assets/francesinha-pedicure-rosa.jpeg" alt="Francesinha pedicure rosa com traço branco" loading="lazy">
-          </div>
-          <figcaption><span>Francesinha pedicure</span><small>Do branco clássico ao rosa suave</small></figcaption>
-        </figure>
       </div>
     </section>
 
@@ -85,8 +78,23 @@
     </section>
   </main>
 
+  <dialog class="gallery-dialog" id="pedicure-gallery" aria-labelledby="pedicure-gallery-title">
+    <div class="gallery-dialog-inner">
+      <header class="gallery-dialog-header">
+        <div><div class="section-kicker">GALERIA DE PEDICURE</div><h2 id="pedicure-gallery-title">Pedicure & <em>francesinha</em></h2></div>
+        <button class="gallery-close" type="button" aria-label="Fechar galeria">×</button>
+      </header>
+      <p class="gallery-dialog-copy">Conheça os cuidados e acabamentos realizados pela Madabeautyy.</p>
+      <div class="pedicure-gallery-grid">
+        <figure><img src="assets/pedicure-real.jpeg" alt="Pedicure com esmaltação clara e acabamento delicado"><figcaption><strong>Pedicure delicada</strong><span>Esmaltação clara e acabamento cuidadoso</span></figcaption></figure>
+        <figure><img src="assets/francesinha-pedicure-clara.jpeg" alt="Francesinha pedicure com esmaltação branca delicada"><figcaption><strong>Francesinha branca</strong><span>Clássica, limpa e delicada</span></figcaption></figure>
+        <figure><img src="assets/francesinha-pedicure-rosa.jpeg" alt="Francesinha pedicure rosa com traço branco"><figcaption><strong>Francesinha rosa</strong><span>Base suave com traço branco</span></figcaption></figure>
+      </div>
+    </div>
+  </dialog>
+
   <footer><a class="brand footer-brand" href="#inicio"><span class="brand-mark" aria-hidden="true">M</span><span>MADABEAUTYY<small>beleza & bem-estar</small></span></a><p>Beleza com carinho, do seu jeito.</p><p>© <span id="year"></span> Madabeautyy</p></footer>
   <a class="floating-whatsapp" href="https://wa.me/556298794800?text=Ol%C3%A1%2C%20Madabeautyy!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio." target="_blank" rel="noopener noreferrer" aria-label="Agendar pelo WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.009-.371-.011-.57-.011-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479s1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.262.489 1.693.625.712.227 1.36.195 1.871.118.57-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347M12.004 2a9.84 9.84 0 0 0-8.401 14.96L2.05 22l5.177-1.521A9.93 9.93 0 0 0 12 21.69h.004A9.845 9.845 0 0 0 21.85 11.85 9.855 9.855 0 0 0 12.004 2m0 17.99h-.003a8.2 8.2 0 0 1-4.182-1.145l-.3-.178-3.072.903.82-2.993-.195-.307a8.14 8.14 0 1 1 6.932 3.72"/></svg><span>Agendar</span></a>
-  <script src="script.js" defer></script>
+  <script src="script.js?v=2" defer></script>
 </body>
 </html>
