@@ -39,5 +39,7 @@ footer{background:#030306;border-top:1px solid var(--line)}
 .real-gallery .photo-cafe img{object-position:center 45%}
 .real-gallery .photo-francesinha img{object-position:center 42%}
 .real-gallery .photo-spa img{object-position:center 62%}
+.real-gallery .photo-pedicure-clara img{object-position:center 42%}
+.real-gallery .photo-pedicure-rosa img{object-position:center 38%}
 @media(max-width:900px){.gallery-grid.real-gallery{grid-template-columns:1fr 1fr;grid-template-rows:none;grid-auto-rows:260px}}
 @media(max-width:580px){.gallery-grid.real-gallery{display:block}.real-gallery .gallery-item{height:340px;margin-bottom:1rem}.real-gallery .photo-brows{height:250px}}
