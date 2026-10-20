@@ -54,14 +54,16 @@ footer{background:#030306;border-top:1px solid var(--line)}
 .gallery-close{flex:0 0 auto;display:grid;place-items:center;width:3rem;height:3rem;border:1px solid #43547f;border-radius:50%;background:#101933;color:#fff;font-size:2rem;line-height:1;cursor:pointer;transition:.2s}
 .gallery-close:hover{background:#4f7cff;border-color:#4f7cff;transform:rotate(5deg)}
 .gallery-dialog-copy{color:#aab7d6;margin:1rem 0 2rem}
-.pedicure-gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
-.pedicure-gallery-grid figure{margin:0;background:#0b1225;border:1px solid #24304e;overflow:hidden}
-.pedicure-gallery-grid img{height:360px;object-fit:cover}
+.pedicure-gallery-grid,.gallery-dialog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.gallery-dialog-grid.two-up{grid-template-columns:repeat(2,minmax(0,1fr))}
+.pedicure-gallery-grid figure,.gallery-dialog-grid figure{margin:0;background:#0b1225;border:1px solid #24304e;overflow:hidden}
+.pedicure-gallery-grid img,.gallery-dialog-grid img{height:360px;object-fit:cover}
 .pedicure-gallery-grid figure:first-child img{object-position:center 35%}
-.pedicure-gallery-grid figcaption{display:grid;gap:.25rem;padding:1rem 1.1rem}
-.pedicure-gallery-grid strong{font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:500}
-.pedicure-gallery-grid span{color:#aab7d6;font-size:.82rem}
+.gallery-dialog-grid figure:first-child img{object-position:center 45%}
+.pedicure-gallery-grid figcaption,.gallery-dialog-grid figcaption{display:grid;gap:.25rem;padding:1rem 1.1rem}
+.pedicure-gallery-grid strong,.gallery-dialog-grid strong{font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:500}
+.pedicure-gallery-grid span,.gallery-dialog-grid span{color:#aab7d6;font-size:.82rem}
 body.gallery-is-open{overflow:hidden}
 @media(max-width:900px){.gallery-grid.real-gallery{grid-template-columns:1fr 1fr;grid-template-rows:none;grid-auto-rows:260px}}
-@media(max-width:700px){.pedicure-gallery-grid{grid-template-columns:1fr}.pedicure-gallery-grid img{height:330px}.gallery-dialog{max-height:94vh}.gallery-dialog-header{gap:1rem}.gallery-close{width:2.7rem;height:2.7rem}}
+@media(max-width:700px){.pedicure-gallery-grid,.gallery-dialog-grid.two-up{grid-template-columns:1fr}.pedicure-gallery-grid img,.gallery-dialog-grid img{height:330px}.gallery-dialog{max-height:94vh}.gallery-dialog-header{gap:1rem}.gallery-close{width:2.7rem;height:2.7rem}}
 @media(max-width:580px){.gallery-grid.real-gallery{display:block}.real-gallery .gallery-item{height:340px;margin-bottom:1rem}.real-gallery .photo-brows{height:250px}}
